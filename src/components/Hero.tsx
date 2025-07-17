@@ -22,14 +22,13 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Transformo dados em{' '}
+              Trabalho com números, produtos e pessoas —{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-                narrativas que engajam
+                na ordem que der melhor resultado.
               </span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Como desenvolvedor de jogos e especialista em marketing digital, combino minha expertise em análise de dados 
-              com 20+ anos de experiência em storytelling para criar jogos educativos premiados.
+              São mais de 20 anos conectando tecnologia, criatividade e análise para liderar projetos entre programação, marketing e inovação. Entre um gráfico e uma história, eu escolho os dois.
             </p>
           </div>
 
