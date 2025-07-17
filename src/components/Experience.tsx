@@ -5,11 +5,11 @@ const Experience = () => {
   const experiences = [
     {
       company: "Soft Shell Games",
-      role: "Team Lead - Desenvolvedor",
-      period: "2023 - Presente",
+      role: "Desenvolvedor",
+      period: "Janeiro 2023 - Julho 2025",
       location: "Campo Grande, MS",
       achievements: [
-        "Direção e Desenvolvimento de Bilhetes e Boatos (Top 3 em Popularidade na Gamescom Latam 2024)",
+        "Desenvolvimento de Bilhetes e Boatos (Top 4/100 em Voto Popular na Gamescom Latam 2024)",
         "Desenvolvimento de Guardião do Futuro (selecionado para a Gamescom Latam 2025)",
         "Desenvolvimento na Engine Ren'Py com foco em Python",
         "Participação em painel sobre jogos nacionais"
@@ -32,7 +32,7 @@ const Experience = () => {
     {
       company: "Agência Ramal",
       role: "Estrategista Digital",
-      period: "2019 - 2021",
+      period: "Janeiro 2023 - Julho 2025",
       location: "Campo Grande, MS",
       achievements: [
         "Desenvolvimento de estratégias digitais para grandes varejistas",
