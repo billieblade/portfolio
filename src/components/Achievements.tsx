@@ -6,29 +6,39 @@ const Achievements = () => {
     {
       icon: <Trophy className="h-8 w-8 text-yellow-500" />,
       title: "Gamescom Latam 2024",
-      subtitle: "Top 3 com Bilhetes e Boatos",
-      description: "Reconhecimento pela popularidade e impacto educacional",
+      subtitle: "Top 4/100 Voto Popular",
+      description: "Bilhetes e Boatos - Melhor jogo do Big Festival",
       color: "yellow"
     },
     {
       icon: <Award className="h-8 w-8 text-blue-500" />,
       title: "SBGames 2024",
-      subtitle: "Melhor Jogo Educacional e Narrativa",
-      description: "Concorrente nas principais categorias do evento",
+      subtitle: "Festival de Jogos",
+      description: "Bilhetes e Boatos selecionado para o festival",
       color: "blue"
     },
     {
       icon: <Users className="h-8 w-8 text-purple-500" />,
       title: "Gamescom Latam 2025",
-      subtitle: "Convidado para Painel Jogos Nacionais",
-      description: "Participação como palestrante sobre desenvolvimento nacional",
+      subtitle: "Palestrante Painel Jogos Nacionais",
+      description: "Guardião do Futuro e desenvolvimento nacional",
       color: "purple"
     },
     {
+      icon: <Star className="h-8 w-8 text-orange-500" />,
+      title: "RD Summit 2022",
+      subtitle: "Florianópolis",
+      description: "Empreendedorismo, marketing, inovação e customer experience",
+      color: "orange"
+    }
+  ];
+
+  const moreAchievements = [
+    {
       icon: <Star className="h-8 w-8 text-green-500" />,
       title: "Miami Ad School",
-      subtitle: "Certificação Human Data Strategy",
-      description: "Especialização em análise de dados e estratégias digitais",
+      subtitle: "Human Data Strategy",
+      description: "Certificação em análise de dados e estratégias digitais",
       color: "green"
     }
   ];
@@ -38,7 +48,8 @@ const Achievements = () => {
       yellow: "from-yellow-400 to-orange-500",
       blue: "from-blue-400 to-blue-600",
       purple: "from-purple-400 to-purple-600",
-      green: "from-green-400 to-green-600"
+      green: "from-green-400 to-green-600",
+      orange: "from-orange-400 to-red-500"
     };
     return colors[color as keyof typeof colors] || colors.blue;
   };
@@ -69,6 +80,25 @@ const Achievements = () => {
                   {achievement.subtitle}
                 </p>
                 <p className="text-gray-300 text-sm">
+                  {achievement.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {moreAchievements.map((achievement, index) => (
+              <div key={index} className="bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-lg transition-all border border-gray-600">
+                <div className={`w-12 h-12 bg-gradient-to-r ${getColorClasses(achievement.color)} rounded-xl flex items-center justify-center mb-3`}>
+                  {achievement.icon}
+                </div>
+                <h4 className="text-lg font-bold text-white mb-1">
+                  {achievement.title}
+                </h4>
+                <p className="text-blue-400 font-medium mb-1 text-sm">
+                  {achievement.subtitle}
+                </p>
+                <p className="text-gray-300 text-xs">
                   {achievement.description}
                 </p>
               </div>

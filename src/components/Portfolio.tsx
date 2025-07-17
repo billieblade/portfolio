@@ -5,19 +5,19 @@ const Portfolio = () => {
   const games = [
     {
       title: "Bilhetes e Boatos",
-      description: "Jogo educativo que conquistou o Top 3 em popularidade na Gamescom Latam 2024, indicado também para Big Impact. Uma narrativa envolvente sobre comunicação e desinformação.",
+      description: "Jogo educativo que conquistou o Top 4/100 em Voto Popular na categoria Melhor jogo do Big Festival na Gamescom Latam 2024. Uma narrativa envolvente sobre comunicação e desinformação.",
       image: "/src/assets/Nzko4S.png",
       link: "https://softg4mes.itch.io/bilhetes-e-boatos",
-      awards: ["Top 3 Gamescom Latam 2024", "Indicado Big Impact"],
+      awards: ["Top 4/100 Voto Popular - Big Festival Gamescom Latam 2024", "Selecionado Festival de Jogos SBGames 2024"],
       year: "2024",
       tech: ["Ren'Py", "Python", "Storytelling"]
     },
     {
       title: "Guardião do Futuro",
-      description: "Jogo convidado para painel sobre jogos nacionais na Gamescom Latam 2025. Explora temas ambientais e sustentabilidade através de uma narrativa interativa.",
+      description: "Jogo convidado para Painel Jogos Nacionais na Gamescom Latam 2025, com participação como palestrante sobre desenvolvimento nacional. Explora temas ambientais e sustentabilidade.",
       image: "/src/assets/Jqf+Yt.png",
       link: "https://softg4mes.itch.io/guardiao-do-futuro",
-      awards: ["Painel Jogos Nacionais - Gamescom Latam 2025"],
+      awards: ["Convidado Painel Jogos Nacionais - Gamescom Latam 2025", "Participação como palestrante sobre desenvolvimento nacional"],
       year: "2025",
       tech: ["Ren'Py", "Python", "Game Design"]
     }
