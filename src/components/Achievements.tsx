@@ -33,17 +33,15 @@ const Achievements = () => {
     }
   ];
 
-  const moreAchievements = [
+  const allAchievements = [
+    ...achievements,
     {
       icon: <Star className="h-8 w-8 text-green-500" />,
       title: "Miami Ad School",
       subtitle: "Human Data Strategy",
       description: "Certificação em análise de dados e estratégias digitais",
       color: "green"
-    }
-  ];
-
-  const campaignAchievements = [
+    },
     {
       icon: <Users className="h-8 w-8 text-red-500" />,
       title: "Campanhas Políticas Digitais",
@@ -94,27 +92,8 @@ const Achievements = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-            {achievements.map((achievement, index) => (
-              <div key={index} className="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 border border-gray-700">
-                <div className={`w-16 h-16 bg-gradient-to-r ${getColorClasses(achievement.color)} rounded-2xl flex items-center justify-center mb-4`}>
-                  {achievement.icon}
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">
-                  {achievement.title}
-                </h3>
-                <p className="text-blue-400 font-semibold mb-2">
-                  {achievement.subtitle}
-                </p>
-                <p className="text-gray-300 text-sm">
-                  {achievement.description}
-                </p>
-              </div>
-            ))}
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {campaignAchievements.map((achievement, index) => (
+            {allAchievements.map((achievement, index) => (
               <div key={index} className="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 border border-gray-700">
                 <div className={`w-16 h-16 bg-gradient-to-r ${getColorClasses(achievement.color)} rounded-2xl flex items-center justify-center mb-4`}>
                   {achievement.icon}
@@ -126,25 +105,6 @@ const Achievements = () => {
                   {achievement.subtitle}
                 </p>
                 <p className="text-gray-300 text-sm">
-                  {achievement.description}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {moreAchievements.map((achievement, index) => (
-              <div key={index} className="bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-lg transition-all border border-gray-600">
-                <div className={`w-12 h-12 bg-gradient-to-r ${getColorClasses(achievement.color)} rounded-xl flex items-center justify-center mb-3`}>
-                  {achievement.icon}
-                </div>
-                <h4 className="text-lg font-bold text-white mb-1">
-                  {achievement.title}
-                </h4>
-                <p className="text-blue-400 font-medium mb-1 text-sm">
-                  {achievement.subtitle}
-                </p>
-                <p className="text-gray-300 text-xs">
                   {achievement.description}
                 </p>
               </div>
