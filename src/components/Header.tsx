@@ -29,7 +29,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <GameController2 className="h-8 w-8 text-blue-600" />
+            <img 
+              src="/src/assets/232262865_110846054593629_874523380130011547_n.jpg" 
+              alt="Felipe Augusto Carvalho Lopes" 
+              className="h-8 w-8 rounded-full object-cover border-2 border-blue-600"
+            />
             <span className="text-xl font-bold text-white">Felipe Augusto Carvalho Lopes</span>
           </div>
 

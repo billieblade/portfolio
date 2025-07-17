@@ -6,7 +6,7 @@ const Portfolio = () => {
     {
       title: "Bilhetes e Boatos",
       description: "Jogo educativo que conquistou o Top 3 em popularidade na Gamescom Latam 2024, indicado também para Big Impact. Uma narrativa envolvente sobre comunicação e desinformação.",
-      image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/src/assets/Nzko4S.png",
       link: "https://softg4mes.itch.io/bilhetes-e-boatos",
       awards: ["Top 3 Gamescom Latam 2024", "Indicado Big Impact"],
       year: "2024",
@@ -15,7 +15,7 @@ const Portfolio = () => {
     {
       title: "Guardião do Futuro",
       description: "Jogo convidado para painel sobre jogos nacionais na Gamescom Latam 2025. Explora temas ambientais e sustentabilidade através de uma narrativa interativa.",
-      image: "https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/src/assets/Jqf+Yt.png",
       link: "https://softg4mes.itch.io/guardiao-do-futuro",
       awards: ["Painel Jogos Nacionais - Gamescom Latam 2025"],
       year: "2025",

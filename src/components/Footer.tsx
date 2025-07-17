@@ -39,7 +39,11 @@ const Footer = () => {
             {/* Brand */}
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <GameController2 className="h-8 w-8 text-blue-400" />
+                <img 
+                  src="/src/assets/232262865_110846054593629_874523380130011547_n.jpg" 
+                  alt="Felipe Augusto Carvalho Lopes" 
+                  className="h-8 w-8 rounded-full object-cover border-2 border-blue-400"
+                />
                 <span className="text-xl font-bold">Felipe Augusto Carvalho Lopes</span>
               </div>
               <p className="text-gray-400 mb-4 leading-relaxed">
